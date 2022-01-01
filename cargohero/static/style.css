@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+body{
+  background-color: black;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+.main-container{
+  width: 90%;
+  height: 50vh;
+  background-color: grey;
+  margin-top: 110px;
+  border-radius: 8px;
+}
+
+.scheduled{
+  height: 500px;
+}
+
+label{
+  color: white;
+}
+
+.upper-buttons{
+  margin-top: -18px;
+  margin-left: -10px;
+}
+
+.active{
+  color: white;
+}
+
+#active{
+  color:white;
+}
+
+.bottom-container{
+  width: 90%;
+  height: 100px;
+  background-color: #80b9df;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+
+.b-top{
+  width:160px;
+  font-weight: 600;
+}
+
+.b-top:hover{
+  color: white;
+}
+
+.bot-text{
+  margin-top: 18px;
+  font-weight:700;
+}
+
+.price{
+  font-weight: 600;
+}
+
+/* book now button */
+.book-now{
+  color: white;
+  border-radius: 8px;
+  float:right;
+  margin-right:5%;
+  margin-top: 10px;
+  background-color: #8a2be2;
+}
+
+.book-now:hover{
+  color: white;
+}
+
+.add{
+  color: white;
+  border-radius: 48%;
+  float:right;
+  margin-right:3%;
+  margin-top: -17px;
+  margin-top: 1px;
+  background-color: #50C878;
+}
+
+.upload-logo{
+  margin-left: 44%;
+  color: green;
+  margin-bottom: 2px;
+  margin-top: -2px;
+}

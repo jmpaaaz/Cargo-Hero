@@ -1,0 +1,322 @@
+{% include "header.html" %}
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0m, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" contet="ie=edge">
+    <title>Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/b63e08a8a1.js" crossorigin="anonymous"></script>
+  </header>
+  <body>
+    <!-- center content -->
+    <div class="mx-auto main-container">
+     <div class="btn-group upper-buttons" role="group">
+       <a href="/dashboard">
+         <button type="button" class="btn btn-sm b-top active" style="border-radius: 10px; background-color:#318CE7"><i
+             class="far fa-plus-square"></i>BOOK AN ORDER</button>
+       </a>
+       <a href="/scheduled">
+         <button type="button" class="btn btn-warning btn-sm b-top" style="border-radius: 10px; margin-left:-8px"><i
+             class="far fa-calendar-alt"></i> SCHEDULED</button>
+      </a>
+       <a href="/cancelled">
+         <button type="button" class="btn btn-sm b-top"
+           style="border-radius: 10px; margin-left:-8px; background-color: #FF69B4;"><i class="far fa-window-close"></i>
+           CANCELLED</button>
+     <a href="/">
+       <button type="button" class="btn btn-sm b-top"
+         style="border-radius: 10px; margin-left:-8px; background-color: #FF0000;"><i class="far fa-window-close"></i>
+         LOG OUT</button>
+    </a>
+    </div>
+  </div>
+
+
+
+    <!-- table -->
+
+        <div class="container m-1 mx-auto rounded" style="border-radius: 8px;">
+
+          <table class="table table-borderless table-sm" style="border-radius: 8px; background-color: grey;  color: white; border-collapse: separate;
+          border-spacing:0 7px;">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 2%;"></th>
+                <th scope="col">ORDER NO</th>
+                <th scope="col">NAME</th>
+                <th scope="col">CONTACT DETAILS</th>
+                <th scope="col">ORDER DETAILS</th>
+                <th scope="col" style="width: 10%;">WEIGHT</th>
+                <th scope="col" style="width: 15%;">COURIER <i class="fas fa-chevron-circle-down"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr style="background-color: white;">
+                <td scope="row" style="background-color: grey;">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  </div>
+                </td>
+                <td style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;"> <input type="text"
+                    class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td> <input type="text" class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td> <input type="text" class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td> <input type="text" class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Select</option>
+                    <option value="1">1kg</option>
+                    <option value="2">2kg</option>
+                    <option value="3">3kg</option>
+                    <option value="3">4kg</option>
+                    <option value="3">5kg</option>
+                  </select>
+                </td>
+                <td style="border-top-right-radius: 8px; border-bottom-right-radius: 8px;"><select class="form-select"
+                    aria-label="Default select example">
+                    <option selected>Select Courier</option>
+                    <option value="1">Lalamove</option>
+                    <option value="2">Mr. Speedy</option>
+                  </select></td>
+              </tr>
+
+              <tr style="background-color: white;">
+                <td scope="row" style="background-color: grey;">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  </div>
+                </td>
+                <td style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;"> <input type="text"
+                    class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td> <input type="text" class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td> <input type="text" class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td> <input type="text" class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Select</option>
+                    <option value="1">1kg</option>
+                    <option value="2">2kg</option>
+                    <option value="3">3kg</option>
+                    <option value="3">4kg</option>
+                    <option value="3">5kg</option>
+                  </select>
+                </td>
+                <td style="border-top-right-radius: 8px; border-bottom-right-radius: 8px;"><select class="form-select"
+                    aria-label="Default select example">
+                    <option selected>Select Courier</option>
+                    <option value="1">Lalamove</option>
+                    <option value="2">Mr. Speedy</option>
+                  </select></td>
+              </tr>
+
+              <tr style="background-color: white;">
+                <td scope="row" style="background-color: grey;">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  </div>
+                </td>
+                <td style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;"> <input type="text"
+                    class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td> <input type="text" class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td> <input type="text" class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td> <input type="text" class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Select</option>
+                    <option value="1">1kg</option>
+                    <option value="2">2kg</option>
+                    <option value="3">3kg</option>
+                    <option value="3">4kg</option>
+                    <option value="3">5kg</option>
+                  </select>
+                </td>
+                <td style="border-top-right-radius: 8px; border-bottom-right-radius: 8px;"><select class="form-select"
+                    aria-label="Default select example">
+                    <option selected>Select Courier</option>
+                    <option value="1">Lalamove</option>
+                    <option value="2">Mr. Speedy</option>
+                  </select></td>
+              </tr>
+
+              <tr style="background-color: white;">
+                <td scope="row" style="background-color: grey;">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  </div>
+                </td>
+                <td style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;"> <input type="text"
+                    class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td> <input type="text" class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td> <input type="text" class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td> <input type="text" class="form-control" aria-describedby="basic-addon1" disabled>
+                </td>
+                <td>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Select</option>
+                    <option value="1">1kg</option>
+                    <option value="2">2kg</option>
+                    <option value="3">3kg</option>
+                    <option value="3">4kg</option>
+                    <option value="3">5kg</option>
+                  </select>
+                </td>
+                <td style="border-top-right-radius: 8px; border-bottom-right-radius: 8px;"><select class="form-select"
+                    aria-label="Default select example">
+                    <option selected>Select Courier</option>
+                    <option value="1">Lalamove</option>
+                    <option value="2">Mr. Speedy</option>
+                  </select></td>
+              </tr>
+
+            </tbody>
+          </table>
+    <div class="row">
+            <button class="mx-auto btn btn-success col-md-6" data-bs-toggle="modal" data-bs-target="#upload_csv"
+              style="width: 48%;"><i class="fas fa-cloud-upload-alt"></i> Upload CSV</button>
+            <button class="mx-auto btn btn-info col-md-6" data-bs-toggle="modal" data-bs-target="#manual_booking"
+              style="width: 48%;"><i class="fas fa-plus"></i> Manual Booking</button>
+          </div>
+        </div>
+        <div class="modal fade" id="upload_csv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Book an Order</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <i class="fas fa-cloud-upload-alt upload-logo fa-4x"></i>
+                <input class="form-control" type="file" id="formFile">
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Upload Csv</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="manual_booking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Add a Booking</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+
+
+         <form class="row g-2" method="GET">
+
+           <div class="input-group mt-4">
+             <span class="input-group-text" id="basic-addon1"><i class="fas fa-hashtag"></i></span>
+             <input type="text" class="form-control" name="order_no" placeholder="Order Number" required
+               aria-describedby="basic-addon1">
+           </div>
+
+           <div class="input-group mt-4">
+             <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+             <input type="text" class="form-control" name="customer_name" placeholder="Customer Name" required
+               aria-describedby="basic-addon1">
+           </div>
+
+           <div class="input-group mt-4">
+             <span class="input-group-text" id="basic-addon1"><i class="fas fa-map-marked-alt"></i></span>
+             <input type="text" class="form-control" name="phone_number" placeholder="Address" required
+               aria-describedby="basic-addon1">
+           </div>
+
+           <div class="input-group mt-4">
+             <span class="input-group-text" id="basic-addon1"><i class="fas fa-phone-volume"></i></span>
+             <input type="text" class="form-control" name="contact_number" placeholder="Contact Number" required
+               aria-describedby="basic-addon1">
+           </div>
+
+
+           <div class="input-group col mt-4">
+             <span class="input-group-text" id="basic-addon1"><i class="fas fa-sort-numeric-up-alt"></i></span>
+             <input type="text" class="form-control" name="name" placeholder="Total Quantity" required
+               aria-describedby="basic-addon1">
+           </div>
+
+           <div class="input-group col mt-4">
+             <span class="input-group-text" id="basic-addon1"><i class="fas fa-weight"></i></span>
+             <input type="number" class="form-control" name="phone_number" placeholder="Weight" required
+               aria-describedby="basic-addon1">
+           </div>
+
+           <div class="input-group mt-4">
+             <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
+             <input type="text" class="form-control" name="contact_number" placeholder="Total Amount" required
+               aria-describedby="basic-addon1">
+           </div>
+
+         </form>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="mx-auto bottom-container">
+  <div class="row" style="text-align: center">
+    <div class="col" style="height: 120px; border-right: 1px solid black;">
+      <h5 class="bot-text">Courier Standard Shipping Fee</h5>
+      <h5 class="price">₱0</h5>
+    </div>
+    <div class="col" style="height: 120px; border-right: 1px solid black;">
+      <h5 class="bot-text">Cargo Hero Charge</h5>
+      <h5 class="price">₱0</h5>
+    </div>
+    <div class="col">
+      <h5 class="bot-text">Total</h5>
+      <h5 class="price">₱0</h5>
+    </div>
+  </div>
+</div>
+<div>
+    <button type="button" class="btn book-now"><i class="fas fa-pen"></i> Book Now</button>
+  </div>
+
+  </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
